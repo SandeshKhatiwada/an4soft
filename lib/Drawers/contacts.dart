@@ -99,7 +99,7 @@ class _ContactsState extends State<Contacts> {
             Padding(
               padding: const EdgeInsets.only(left: 20),
               child: Container(
-                height: 40,
+                height: 35,
                 width: 120,
                 child: ElevatedButton(
                     style: ButtonStyle(

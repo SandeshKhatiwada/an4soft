@@ -26,18 +26,12 @@ class DrawerWidget extends StatelessWidget {
             },
             leading: Icon(
               Icons.auto_stories,
-              size: 32,
+              size: 25,
               color: Colors.orange,
             ),
             title: Text(
               "Our Story",
-              style: TextStyle(fontSize: 20, color: Colors.blue),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Divider(
-              color: Colors.orange,
+              style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
           ),
           ListTile(
@@ -46,18 +40,12 @@ class DrawerWidget extends StatelessWidget {
             },
             leading: Icon(
               Icons.work,
-              size: 32,
+              size: 25,
               color: Colors.orange,
             ),
             title: Text(
               "Our Work",
-              style: TextStyle(fontSize: 20, color: Colors.blue),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Divider(
-              color: Colors.orange,
+              style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
           ),
           ListTile(
@@ -66,12 +54,12 @@ class DrawerWidget extends StatelessWidget {
             },
             leading: Icon(
               Icons.miscellaneous_services,
-              size: 32,
+              size: 25,
               color: Colors.orange,
             ),
             title: Text(
               "Services",
-              style: TextStyle(fontSize: 20, color: Colors.blue),
+              style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
           ),
           Padding(
@@ -86,18 +74,12 @@ class DrawerWidget extends StatelessWidget {
             },
             leading: Icon(
               Icons.workspace_premium,
-              size: 32,
+              size: 25,
               color: Colors.orange,
             ),
             title: Text(
               "Careers",
-              style: TextStyle(fontSize: 20, color: Colors.blue),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Divider(
-              color: Colors.orange,
+              style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
           ),
           ListTile(
@@ -106,18 +88,12 @@ class DrawerWidget extends StatelessWidget {
             },
             leading: Icon(
               Icons.menu_book,
-              size: 32,
+              size: 25,
               color: Colors.orange,
             ),
             title: Text(
               "Blog",
-              style: TextStyle(fontSize: 20, color: Colors.blue),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Divider(
-              color: Colors.orange,
+              style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
           ),
           ListTile(
@@ -126,12 +102,12 @@ class DrawerWidget extends StatelessWidget {
             },
             leading: Icon(
               Icons.info,
-              size: 32,
+              size: 25,
               color: Colors.orange,
             ),
             title: Text(
               "About Us",
-              style: TextStyle(fontSize: 20, color: Colors.blue),
+              style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
           ),
           Padding(
@@ -146,12 +122,12 @@ class DrawerWidget extends StatelessWidget {
             },
             leading: Icon(
               Icons.connect_without_contact,
-              size: 32,
+              size: 25,
               color: Colors.orange,
             ),
             title: Text(
               "Contact",
-              style: TextStyle(fontSize: 20, color: Colors.blue),
+              style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
           ),
           Padding(
@@ -163,7 +139,7 @@ class DrawerWidget extends StatelessWidget {
           SizedBox(height: 15),
           Center(
             child: Container(
-              height: 50,
+              height: 40,
               width: 150,
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(10)),
@@ -195,7 +171,7 @@ class DrawerWidget extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Container(
-            height: 130,
+            height: 150,
             color: Colors.grey[50],
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

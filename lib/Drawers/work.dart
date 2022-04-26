@@ -62,8 +62,8 @@ class OurWork extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25),
                 child: Container(
-                  height: 40,
-                  width: 160,
+                  height: 35,
+                  width: 145,
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
@@ -77,11 +77,11 @@ class OurWork extends StatelessWidget {
                       children: [
                         Text(
                           "Get in touch",
-                          style: TextStyle(fontSize: 18, color: Colors.white),
+                          style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                         Icon(
                           Icons.arrow_forward_ios,
-                          size: 20,
+                          size: 18,
                           color: Colors.white,
                         )
                       ],

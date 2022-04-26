@@ -59,26 +59,31 @@ class Blog extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 20),
-                child: Container(
-                  width: 100,
-                  child: TextButton(
-                      onPressed: () {},
-                      child: Row(
-                        children: [
-                          Text(
-                            "Read",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.orange,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Container(
+                    width: 100,
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Read",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.orange,
+                              ),
                             ),
-                          ),
-                          Icon(
-                            Icons.arrow_forward,
-                            color: Colors.orange,
-                          )
-                        ],
-                      )),
+                            Icon(
+                              Icons.arrow_forward,
+                              color: Colors.orange,
+                              size: 20,
+                            )
+                          ],
+                        )),
+                  ),
                 ),
               ),
               Padding(
@@ -94,7 +99,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -129,7 +134,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -164,7 +169,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -199,7 +204,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -224,7 +229,7 @@ class Blog extends StatelessWidget {
               SizedBox(height: 20),
               Container(
                 height: 50,
-                color: Colors.orange,
+                color: Colors.deepOrangeAccent,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -235,7 +240,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "TECHNOLOGY",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -247,7 +252,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "DESIGN",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -259,7 +264,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "DIGITAL TRANSFORMATION",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -271,7 +276,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "PRODUCT MANAGEMENT",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -283,7 +288,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "ARTIFICIAL INTELLIGENCE",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -295,29 +300,34 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "CULTURE",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            primary: Colors.green,
-                          ),
-                          onPressed: () {},
-                          child: Row(
-                            children: [
-                              Text(
-                                "SUBSCRIBE",
-                                style: TextStyle(
-                                    fontSize: 16, color: Colors.white),
-                              ),
-                              SizedBox(width: 5),
-                              Icon(Icons.arrow_forward, color: Colors.white)
-                            ],
-                          )),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            border: Border.all(color: Colors.white)),
+                        child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.black45,
+                            ),
+                            onPressed: () {},
+                            child: Row(
+                              children: [
+                                Text(
+                                  "SUBSCRIBE",
+                                  style: TextStyle(
+                                      fontSize: 14, color: Colors.white),
+                                ),
+                                SizedBox(width: 5),
+                                Icon(Icons.arrow_forward, color: Colors.white)
+                              ],
+                            )),
+                      ),
                     )
                   ],
                 ),
@@ -356,7 +366,7 @@ class Blog extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Divider(
-                  color: Colors.deepOrange,
+                  color: Colors.orange,
                 ),
               ),
               SizedBox(height: 20),
@@ -393,7 +403,7 @@ class Blog extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Divider(
-                  color: Colors.deepOrange,
+                  color: Colors.orange,
                 ),
               ),
               SizedBox(height: 20),
@@ -430,7 +440,7 @@ class Blog extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Divider(
-                  color: Colors.deepOrange,
+                  color: Colors.orange,
                 ),
               ),
               SizedBox(height: 20),
@@ -467,7 +477,7 @@ class Blog extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Divider(
-                  color: Colors.deepOrange,
+                  color: Colors.orange,
                 ),
               ),
               SizedBox(height: 20),

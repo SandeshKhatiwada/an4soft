@@ -7,6 +7,7 @@ import 'package:an_four_soft/Drawers/service.dart';
 import 'package:an_four_soft/Drawers/story.dart';
 import 'package:an_four_soft/Drawers/work.dart';
 import 'package:an_four_soft/home_page.dart';
+import 'package:an_four_soft/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,9 +26,11 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //   primarySwatch: Colors.orange,
       // ),
-      home: HomePage(),
+      home: Splash(),
 
       routes: {
+        'splash': (context) => Splash(),
+        'homePage': (context) => HomePage(),
         'ourStory': (context) => OurStory(),
         'ourWork': (context) => OurWork(),
         'services': (context) => Services(),
@@ -35,6 +38,7 @@ class MyApp extends StatelessWidget {
         'blog': (context) => Blog(),
         'contacts': (context) => Contacts(),
         'about': (context) => About(),
+
       },
     );
   }
