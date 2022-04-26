@@ -45,6 +45,7 @@ class Career extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Text(
                   "AN4SOFT is always on the lookout for creative, passionate, adventurous, and quirky people to join our team. If you’re excited to work on award-winning projects, collaborate with fantastic people and be willing to challenge yourself, you may be that special someone we are looking for.",
+                  textAlign: TextAlign.justify,
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
@@ -91,36 +92,41 @@ class Career extends StatelessWidget {
                         padding:
                             const EdgeInsets.only(left: 10, right: 10, top: 15),
                         child: Text(
-                            "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups."),
+                          "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups.",
+                          textAlign: TextAlign.justify,
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          width: 120,
-                          child: TextButton(
-                            onPressed: () {},
-                            child: Row(
-                              children: [
-                                Text(
-                                  "More",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                                SizedBox(width: 3),
-                                Icon(
-                                  Icons.hdr_strong,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.mode_standby,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                              ],
+                        child: Align(
+                          alignment: Alignment.centerRight,
+                          child: Container(
+                            width: 120,
+                            child: TextButton(
+                              onPressed: () {},
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "More",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
+                                  SizedBox(width: 3),
+                                  Icon(
+                                    Icons.hdr_strong,
+                                    color: Colors.orange,
+                                  ),
+                                  Icon(
+                                    Icons.mode_standby,
+                                    color: Colors.orange,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.orange,
+                                    size: 18,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -157,36 +163,41 @@ class Career extends StatelessWidget {
                         padding:
                             const EdgeInsets.only(left: 10, right: 10, top: 15),
                         child: Text(
-                            "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups."),
+                          "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups.",
+                          textAlign: TextAlign.justify,
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          width: 120,
-                          child: TextButton(
-                            onPressed: () {},
-                            child: Row(
-                              children: [
-                                Text(
-                                  "More",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                                SizedBox(width: 3),
-                                Icon(
-                                  Icons.hdr_strong,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.mode_standby,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                              ],
+                        child: Align(
+                          alignment: Alignment.centerRight,
+                          child: Container(
+                            width: 120,
+                            child: TextButton(
+                              onPressed: () {},
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "More",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
+                                  SizedBox(width: 3),
+                                  Icon(
+                                    Icons.hdr_strong,
+                                    color: Colors.orange,
+                                  ),
+                                  Icon(
+                                    Icons.mode_standby,
+                                    color: Colors.orange,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.orange,
+                                    size: 18,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -223,36 +234,41 @@ class Career extends StatelessWidget {
                         padding:
                             const EdgeInsets.only(left: 10, right: 10, top: 15),
                         child: Text(
-                            "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups."),
+                          "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups.",
+                          textAlign: TextAlign.justify,
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          width: 120,
-                          child: TextButton(
-                            onPressed: () {},
-                            child: Row(
-                              children: [
-                                Text(
-                                  "More",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                                SizedBox(width: 3),
-                                Icon(
-                                  Icons.hdr_strong,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.mode_standby,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                              ],
+                        child: Align(
+                          alignment: Alignment.centerRight,
+                          child: Container(
+                            width: 120,
+                            child: TextButton(
+                              onPressed: () {},
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "More",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
+                                  SizedBox(width: 3),
+                                  Icon(
+                                    Icons.hdr_strong,
+                                    color: Colors.orange,
+                                  ),
+                                  Icon(
+                                    Icons.mode_standby,
+                                    color: Colors.orange,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.orange,
+                                    size: 18,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),

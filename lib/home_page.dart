@@ -3,7 +3,6 @@
 import 'package:an_four_soft/Drawers/drawer.dart';
 import 'package:flutter/material.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -47,7 +46,6 @@ class _HomePageState extends State<HomePage> {
               Container(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 30, left: 25),
@@ -58,7 +56,6 @@ class _HomePageState extends State<HomePage> {
                           Text(
                             "SOFTWARE\nDEVELOPMENT",
                             style: TextStyle(
-                              fontFamily: 'RaleWay',
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                               color: Colors.orange,
@@ -83,8 +80,6 @@ class _HomePageState extends State<HomePage> {
                                     offset: Offset(6, 6))
                               ],
                             ),
-                            // height: 35,
-                            // width: 95,
                             child: ElevatedButton(
                                 style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(
@@ -99,13 +94,11 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Text(
                                       "Work with us",
-                                      //style: TextStyle(fontSize: 8),
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                     SizedBox(width: 5),
-                                    Icon(
-                                      Icons.arrow_forward_ios,
-                                      size: 15,
-                                    )
+                                    Icon(Icons.arrow_forward_ios,
+                                        size: 15, color: Colors.white)
                                   ],
                                 )),
                           )
@@ -158,17 +151,12 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.orange),
                     ),
                     SizedBox(height: 15),
-                    ListView(
-                      shrinkWrap: true,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(right: 25),
-                          child: buildText(
-                              "Paragraphs are the building blocks of papers. Without well-written paragraphs that flow logically from one idea to the next and that inform and help support in some meaningful way the central research problem being investigated, your paper will not be viewed as credible and, well, you'll probably receive a poor grade.Paragraphs are the building blocks of papers. Without well-written paragraphs that flow logically from one idea to the next and that inform and help support in some meaningful way the central research problem being investigated, your paper will not be viewed as credible and, well, you'll probably receive a poor grade.Paragraphs are the building blocks of papers. Without well-written paragraphs that flow logically from one idea to the next and that inform and help support in some meaningful way the central research problem being investigated, your paper will not be viewed as credible and, well, you'll probably receive a poor grade."),
-                        ),
-                        SizedBox(height: 20),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(right: 25),
+                      child: buildText(
+                          "Paragraphs are the building blocks of papers. Without well-written paragraphs that flow logically from one idea to the next and that inform and help support in some meaningful way the central research problem being investigated, your paper will not be viewed as credible and, well, you'll probably receive a poor grade.Paragraphs are the building blocks of papers. Without well-written paragraphs that flow logically from one idea to the next and that inform and help support in some meaningful way the central research problem being investigated, your paper will not be viewed as credible and, well, you'll probably receive a poor grade.Paragraphs are the building blocks of papers. Without well-written paragraphs that flow logically from one idea to the next and that inform and help support in some meaningful way the central research problem being investigated, your paper will not be viewed as credible and, well, you'll probably receive a poor grade."),
                     ),
+                    SizedBox(height: 20),
                     Container(
                       width: 130,
                       child: ElevatedButton(
@@ -184,10 +172,14 @@ class _HomePageState extends State<HomePage> {
                               setState(() => isReadMore = !isReadMore),
                           child: Row(
                             children: [
-                              Text(isReadMore ? "Show Less" : "Show More"),
+                              Text(
+                                isReadMore ? "Show Less" : "Show More",
+                                style: TextStyle(color: Colors.white),
+                              ),
                               Icon(
                                 Icons.arrow_forward_ios,
                                 size: 15,
+                                color: Colors.white,
                               )
                             ],
                           )),
@@ -212,13 +204,15 @@ class _HomePageState extends State<HomePage> {
                       padding: const EdgeInsets.only(right: 25),
                       child: Text(
                         "A.N. FOUR SOFT offers everything from web design, corporate identity, digital marketing, mobile, and brand positioning.",
+                        textAlign: TextAlign.justify,
                         style: TextStyle(color: Colors.black45),
                       ),
                     ),
-                   
                   ],
                 ),
-              )
+              ),
+              SizedBox(height: 20),
+              Image.asset("assets/an4soft.png"),
             ],
           ),
         ));
@@ -228,9 +222,8 @@ class _HomePageState extends State<HomePage> {
     final maxLines = isReadMore ? null : 5;
     return Text(
       text,
+      textAlign: TextAlign.justify,
       maxLines: maxLines,
     );
   }
-
- 
 }

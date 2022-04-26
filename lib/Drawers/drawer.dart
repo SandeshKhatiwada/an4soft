@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({
@@ -120,7 +121,9 @@ class DrawerWidget extends StatelessWidget {
             ),
           ),
           ListTile(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "about");
+            },
             leading: Icon(
               Icons.info,
               size: 32,
@@ -138,7 +141,9 @@ class DrawerWidget extends StatelessWidget {
             ),
           ),
           ListTile(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "contacts");
+            },
             leading: Icon(
               Icons.connect_without_contact,
               size: 32,
@@ -176,15 +181,57 @@ class DrawerWidget extends StatelessWidget {
                     children: [
                       Text(
                         "Buy Domain",
-                        style: TextStyle(fontSize: 16),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                       ),
                       SizedBox(width: 4),
                       Icon(
                         Icons.arrow_forward_ios,
                         size: 20,
+                        color: Colors.white,
                       ),
                     ],
                   )),
+            ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            height: 130,
+            color: Colors.grey[50],
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      FontAwesomeIcons.twitter,
+                      color: Colors.lightBlue,
+                    ),
+                    SizedBox(width: 20),
+                    Icon(
+                      Icons.facebook_outlined,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(width: 20),
+                    Icon(
+                      FontAwesomeIcons.instagram,
+                      color: Colors.red,
+                    ),
+                    SizedBox(width: 20),
+                    Icon(
+                      FontAwesomeIcons.linkedinIn,
+                      color: Colors.blue,
+                    ),
+                  ],
+                ),
+                SizedBox(height: 20),
+                Text(
+                  "© An4soft. All Rights Reserved.",
+                  style: TextStyle(
+                    color: Colors.orange,
+                  ),
+                ),
+              ],
             ),
           )
         ],

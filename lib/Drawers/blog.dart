@@ -53,6 +53,7 @@ class Blog extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25, right: 25, top: 20),
                 child: Text(
                   "Through superior banking UX design, modern mobile banking apps are easy to navigate. Users hardly ever get lost ...",
+                  textAlign: TextAlign.justify,
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
@@ -223,7 +224,7 @@ class Blog extends StatelessWidget {
               SizedBox(height: 20),
               Container(
                 height: 50,
-                color: Colors.blue,
+                color: Colors.orange,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -303,22 +304,170 @@ class Blog extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            //fixedSize: Size(120, 35),
-                            primary: Colors.orange,
+                            primary: Colors.green,
                           ),
                           onPressed: () {},
                           child: Row(
                             children: [
                               Text(
                                 "SUBSCRIBE",
-                                style: TextStyle(fontSize: 16),
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.white),
                               ),
                               SizedBox(width: 5),
-                              Icon(Icons.arrow_forward)
+                              Icon(Icons.arrow_forward, color: Colors.white)
                             ],
                           )),
                     )
                   ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog1.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.deepOrange,
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog2.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.deepOrange,
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog3.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.deepOrange,
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog4.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.deepOrange,
                 ),
               ),
               SizedBox(height: 20),
