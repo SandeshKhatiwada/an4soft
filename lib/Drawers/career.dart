@@ -17,7 +17,11 @@ class Career extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 60, left: 25),
                 child: Text(
                   "Want To Be Part Of",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               Padding(
@@ -45,6 +49,7 @@ class Career extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Text(
                   "AN4SOFT is always on the lookout for creative, passionate, adventurous, and quirky people to join our team. If you’re excited to work on award-winning projects, collaborate with fantastic people and be willing to challenge yourself, you may be that special someone we are looking for.",
+                  textAlign: TextAlign.justify,
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
@@ -53,6 +58,7 @@ class Career extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25),
                 child: Text(
                   "Send us your resume and portfolio at:",
+                  textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -93,6 +99,76 @@ class Career extends StatelessWidget {
                         child: Text(
                             "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups."),
                       ),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: Container(
+                          width: 120,
+                          child: TextButton(
+                            onPressed: () {},
+                            child: Row(
+                              children: [
+                                Spacer(),
+                                Text(
+                                  "More",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                SizedBox(width: 3),
+                                Icon(
+                                  Icons.hdr_strong,
+                                  color: Colors.orange,
+                                ),
+                                Icon(
+                                  Icons.mode_standby,
+                                  color: Colors.orange,
+                                  size: 18,
+                                ),
+                                Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.orange,
+                                  size: 18,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Container(
+                  height: 240,
+                  color: Colors.grey[200],
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, top: 15),
+                        child: Text(
+                          "IT Project Manager",
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Text(
+                          "An4soft International Pvt. Ltd.",
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(fontSize: 18),
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            const EdgeInsets.only(left: 10, right: 10, top: 15),
+                        child: Text(
+                          "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups.",
+                          textAlign: TextAlign.justify,
+                        ),
+                      ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
                         child: Container(
@@ -157,73 +233,9 @@ class Career extends StatelessWidget {
                         padding:
                             const EdgeInsets.only(left: 10, right: 10, top: 15),
                         child: Text(
-                            "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups."),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Container(
-                          width: 120,
-                          child: TextButton(
-                            onPressed: () {},
-                            child: Row(
-                              children: [
-                                Text(
-                                  "More",
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                                SizedBox(width: 3),
-                                Icon(
-                                  Icons.hdr_strong,
-                                  color: Colors.orange,
-                                ),
-                                Icon(
-                                  Icons.mode_standby,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.orange,
-                                  size: 18,
-                                ),
-                              ],
-                            ),
-                          ),
+                          "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups.",
+                          textAlign: TextAlign.justify,
                         ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.only(left: 25, right: 25),
-                child: Container(
-                  height: 240,
-                  color: Colors.grey[200],
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10, top: 15),
-                        child: Text(
-                          "IT Project Manager",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-                        child: Text(
-                          "An4soft International Pvt. Ltd.",
-                          style: TextStyle(fontSize: 18),
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            const EdgeInsets.only(left: 10, right: 10, top: 15),
-                        child: Text(
-                            "We are looking for an experienced IT Project Manager to join our An4soft team. You will help to plan the project development and communicate with clients. If you are a motivated and curious person, we need you to build innovative startups."),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),

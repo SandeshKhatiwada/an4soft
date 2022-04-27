@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors
 import 'package:an_four_soft/Drawers/blog.dart';
 import 'package:an_four_soft/Drawers/career.dart';
 import 'package:an_four_soft/Drawers/service.dart';
@@ -8,7 +7,7 @@ import 'package:an_four_soft/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,14 +21,14 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //   primarySwatch: Colors.orange,
       // ),
-      home: HomePage(),
+      home: const HomePage(),
 
       routes: {
         'ourStory': (context) => const OurStory(),
         'ourWork': (context) => const OurWork(),
         'services': (context) => const Services(),
-        'career' : (context)=> const Career(),
-        'blog' : (context) => const Blog(),
+        'career': (context) => const Career(),
+        'blog': (context) => const Blog(),
       },
     );
   }
