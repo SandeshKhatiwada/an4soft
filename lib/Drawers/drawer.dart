@@ -15,7 +15,7 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           SizedBox(
-            height: 120,
+            height: 200,
             child: DrawerHeader(
               child: Image.asset("assets/logo.png"),
             ),
