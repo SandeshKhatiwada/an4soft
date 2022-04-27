@@ -20,9 +20,9 @@ class _ServicesWidgetState extends State<ServicesWidget> {
   @override
   Widget build(BuildContext context) {
     return TopDesign(
-      waitDuration: Duration(seconds: 2),
+      waitDuration: const Duration(seconds: 2),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Container(
+        SizedBox(
           width: 130,
           child: ElevatedButton(
               style: ButtonStyle(
@@ -36,28 +36,28 @@ class _ServicesWidgetState extends State<ServicesWidget> {
               child: Row(
                 children: [
                   Text(isReadMore ? "Show Less" : "Show More"),
-                  Icon(
+                  const Icon(
                     Icons.arrow_forward_ios,
                     size: 15,
                   )
                 ],
               )),
         ),
-        SizedBox(height: 25),
+        const SizedBox(height: 25),
         Image.asset("assets/service.png"),
-        SizedBox(height: 10),
-        Text(
+        const SizedBox(height: 10),
+        const Text(
           "360°of Digital Services",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
-        Text(
+        const Text(
           "Expertise",
           style: TextStyle(
               fontSize: 25, fontWeight: FontWeight.bold, color: Colors.orange),
         ),
-        SizedBox(height: 15),
-        Padding(
-          padding: const EdgeInsets.only(right: 25),
+        const SizedBox(height: 15),
+        const Padding(
+          padding: EdgeInsets.only(right: 25),
           child: Text(
             "A.N. FOUR SOFT offers everything from web design, corporate identity, digital marketing, mobile, and brand positioning.",
             style: TextStyle(color: Colors.black45),
@@ -113,7 +113,7 @@ class _TopDesignState extends State<TopDesign> with TickerProviderStateMixin {
   }
 
   void slide() async {
-    Timer(widget.waitDuration - Duration(milliseconds: 100), () async {
+    Timer(widget.waitDuration - const Duration(milliseconds: 100), () async {
       await _controller.forward();
 
       _controller.stop();
@@ -128,9 +128,8 @@ class _TopDesignState extends State<TopDesign> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: SlideTransition(
-            position: _offsetAnimation,
-            child: FadeTransition(opacity: _animation1, child: widget.child)));
+    return SlideTransition(
+        position: _offsetAnimation,
+        child: FadeTransition(opacity: _animation1, child: widget.child));
   }
 }

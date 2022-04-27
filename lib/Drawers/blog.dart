@@ -53,31 +53,37 @@ class Blog extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25, right: 25, top: 20),
                 child: Text(
                   "Through superior banking UX design, modern mobile banking apps are easy to navigate. Users hardly ever get lost ...",
+                  textAlign: TextAlign.justify,
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 20),
-                child: Container(
-                  width: 100,
-                  child: TextButton(
-                      onPressed: () {},
-                      child: Row(
-                        children: [
-                          Text(
-                            "Read",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.orange,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Container(
+                    width: 100,
+                    child: TextButton(
+                        onPressed: () {},
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Read",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.orange,
+                              ),
                             ),
-                          ),
-                          Icon(
-                            Icons.arrow_forward,
-                            color: Colors.orange,
-                          )
-                        ],
-                      )),
+                            Icon(
+                              Icons.arrow_forward,
+                              color: Colors.orange,
+                              size: 20,
+                            )
+                          ],
+                        )),
+                  ),
                 ),
               ),
               Padding(
@@ -93,7 +99,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -128,7 +134,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -163,7 +169,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -198,7 +204,7 @@ class Blog extends StatelessWidget {
                   "Banking",
                   style: TextStyle(
                       letterSpacing: 2,
-                      fontSize: 25,
+                      fontSize: 22,
                       //fontWeight: FontWeight.bold,
                       color: Colors.orange),
                 ),
@@ -223,7 +229,7 @@ class Blog extends StatelessWidget {
               SizedBox(height: 20),
               Container(
                 height: 50,
-                color: Colors.blue,
+                color: Colors.deepOrangeAccent,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -234,7 +240,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "TECHNOLOGY",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -246,7 +252,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "DESIGN",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -258,7 +264,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "DIGITAL TRANSFORMATION",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -270,7 +276,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "PRODUCT MANAGEMENT",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -282,7 +288,7 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "ARTIFICIAL INTELLIGENCE",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
@@ -294,31 +300,184 @@ class Blog extends StatelessWidget {
                           child: Text(
                             "CULTURE",
                             style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            //fixedSize: Size(120, 35),
-                            primary: Colors.orange,
-                          ),
-                          onPressed: () {},
-                          child: Row(
-                            children: [
-                              Text(
-                                "SUBSCRIBE",
-                                style: TextStyle(fontSize: 16),
-                              ),
-                              SizedBox(width: 5),
-                              Icon(Icons.arrow_forward)
-                            ],
-                          )),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            border: Border.all(color: Colors.white)),
+                        child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.black45,
+                            ),
+                            onPressed: () {},
+                            child: Row(
+                              children: [
+                                Text(
+                                  "SUBSCRIBE",
+                                  style: TextStyle(
+                                      fontSize: 14, color: Colors.white),
+                                ),
+                                SizedBox(width: 5),
+                                Icon(Icons.arrow_forward, color: Colors.white)
+                              ],
+                            )),
+                      ),
                     )
                   ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog1.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.orange,
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog2.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.orange,
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog3.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.orange,
+                ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "INSIGHTS",
+                  style: TextStyle(
+                      fontSize: 23, letterSpacing: 3, color: Colors.orange),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Image.asset("assets/blog4.png"),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "Clutch Recognizes An4soft as Leading Nepalize Development Company",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: Text(
+                  "May 18, 2021",
+                  style: TextStyle(fontSize: 16, color: Colors.grey),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 25, right: 25),
+                child: Divider(
+                  color: Colors.orange,
                 ),
               ),
               SizedBox(height: 20),

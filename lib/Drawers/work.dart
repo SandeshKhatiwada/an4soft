@@ -52,6 +52,7 @@ class OurWork extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25, right: 25),
                 child: Text(
                   "A.N.Four Soft is the sum of 45 happy, wild, spirited, shy, geeky, artsy and fun team members.Our agency strives to create emotional and meaningful stories, which in turn become fantastic digital experiences.A.N.Four Soft is the sum of 45 happy, wild, spirited, shy, geeky, artsy and fun team members.Our agency strives to create emotional and meaningful stories, which in turn become fantastic digital experiences.\n\nA.N.Four Soft is the sum of 45 happy, wild, spirited, shy, geeky, artsy and fun team members.Our agency strives to create emotional and meaningful stories, which in turn become fantastic digital experiences.A.N.Four Soft is the sum of 45 happy, wild, spirited, shy, geeky, artsy and fun team members.Our agency strives to create emotional and meaningful stories, which in turn become fantastic digital experiences.",
+                  textAlign: TextAlign.justify,
                   style: TextStyle(
                     color: Colors.grey,
                   ),
@@ -61,8 +62,8 @@ class OurWork extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25),
                 child: Container(
-                  height: 40,
-                  width: 160,
+                  height: 35,
+                  width: 145,
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
@@ -76,11 +77,12 @@ class OurWork extends StatelessWidget {
                       children: [
                         Text(
                           "Get in touch",
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                         Icon(
                           Icons.arrow_forward_ios,
-                          size: 20,
+                          size: 18,
+                          color: Colors.white,
                         )
                       ],
                     ),

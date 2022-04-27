@@ -54,6 +54,7 @@ class Services extends StatelessWidget {
               padding: const EdgeInsets.only(left: 25, right: 25),
               child: Text(
                 "From corporate identity to website development and digital campaigns, we help brands dazzle their audience and grow their bottom line with visible results.",
+                textAlign: TextAlign.justify,
                 style: TextStyle(fontSize: 16),
               ),
             ),
@@ -62,6 +63,7 @@ class Services extends StatelessWidget {
               padding: const EdgeInsets.only(left: 25, right: 25),
               child: Text(
                 "From corporate identity to website development and digital campaigns, we help brands dazzle their audience and grow their bottom line with visible results.\n\nFrom corporate identity to website development and digital campaigns, we help brands dazzle their audience and grow their bottom line with visible results.",
+                textAlign: TextAlign.justify,
                 style: TextStyle(color: Colors.grey),
               ),
             ),
@@ -130,12 +132,15 @@ class Services extends StatelessWidget {
                             children: [
                               Text(
                                 "Find out how",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
                               ),
                               SizedBox(width: 5),
                               Icon(
                                 Icons.arrow_forward_ios,
                                 size: 20,
+                                color: Colors.white,
                               )
                             ],
                           )),
@@ -209,12 +214,15 @@ class Services extends StatelessWidget {
                             children: [
                               Text(
                                 "Find out how",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
                               ),
                               SizedBox(width: 5),
                               Icon(
                                 Icons.arrow_forward_ios,
                                 size: 20,
+                                color: Colors.white,
                               )
                             ],
                           )),
@@ -288,12 +296,15 @@ class Services extends StatelessWidget {
                             children: [
                               Text(
                                 "Find out how",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
                               ),
                               SizedBox(width: 5),
                               Icon(
                                 Icons.arrow_forward_ios,
                                 size: 20,
+                                color: Colors.white,
                               )
                             ],
                           )),
@@ -367,12 +378,15 @@ class Services extends StatelessWidget {
                             children: [
                               Text(
                                 "Find out how",
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
                               ),
                               SizedBox(width: 5),
                               Icon(
                                 Icons.arrow_forward_ios,
                                 size: 20,
+                                color: Colors.white,
                               )
                             ],
                           )),
